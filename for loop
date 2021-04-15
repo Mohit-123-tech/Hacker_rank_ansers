@@ -1,0 +1,26 @@
+#include <bits/stdc++.h>
+using namespace std;
+
+int main()
+{
+    int nom1,nom2;
+    cin>>nom1>>nom2;
+    string arr1[9] = {"one","two","three","four","five","six","seven","eight","nine"};
+    for(int i=nom1; i<=nom2;i++)
+    {
+        if(i<=9)
+        {
+            cout<<arr1[i-1]<<endl;
+        }else 
+        {
+            if(i%2==0)
+            {
+                cout<<"even"<<endl;   
+            }else
+            {
+                cout<<"odd"<<endl;    
+            }
+        }
+    }
+    return 0;
+}
